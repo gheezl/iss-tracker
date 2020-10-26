@@ -7,8 +7,7 @@
     background-color: white;
     border: none;
     padding: 20px;
-    border-radius: 100%;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -29,4 +28,10 @@
     display: grid;
     align-items: center;
     font-size: 35px;
+}
+
+@media only screen and (max-width: 800px) {
+    .location-border {
+        font-size: 25px;
+    }
 }
