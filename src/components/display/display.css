@@ -6,9 +6,10 @@
 
 .button {
     background-color: white;
-    border: 1px solid black;
-    padding: 15px;
+    border: none;
+    padding: 20px;
     border-radius: 100%;
+    font-size: 15px;
     cursor: pointer;
     transition: 0.5s;
 }
