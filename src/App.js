@@ -2,12 +2,13 @@ import React, { Fragment } from 'react';
 
 import "./App.css"
 
+import Header from "./components/header/header.jsx"
+
 
 const App = () => {
+
   return (
-    <Fragment>
-      <h1>HI</h1>
-    </Fragment>
+    <Header />
   )
 }
 
