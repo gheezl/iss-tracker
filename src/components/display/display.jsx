@@ -17,24 +17,21 @@ const Display = () => {
 
     return (
         <Fragment>
-            <div className="button-border">
-                <button className="button" onClick={() => setInterval(getIssLocation, 1000)} >
-                    Click to display location
-                </button>
-            </div>
             <div className="location-container">
                 {
                     toggle
                         ? (
-
                             <div className="location-border">
                                 <span>longitude: {issLocation.longitude}</span>
                                 <span>latitude: {issLocation.latitude}</span>
                             </div>
-
                         )
                         : (
-                            null
+                            <div className="button-border">
+                                <button className="button" onClick={() => setInterval(getIssLocation, 1000)} >
+                                    Click to track location
+                                </button>
+                            </div>
                         )
                 }
             </div>

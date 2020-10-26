@@ -1,7 +1,6 @@
 .button-border {
     display: flex;
     justify-content: center;
-    margin: 25px;
 }
 
 .button {
@@ -22,8 +21,7 @@
 .location-container {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
-    margin: 100px;
+    margin-top: 15vw;
     padding: 50px;
 }
 
