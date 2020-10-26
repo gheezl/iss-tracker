@@ -1,5 +1,13 @@
-.location-border {
+.location-container {
     display: flex;
     justify-content: center;
+    border: 1px solid black;
+    margin: 100px;
+    padding: 50px;
+}
+
+.location-border {
+    display: grid;
+    align-items: center;
     font-size: 35px;
 }

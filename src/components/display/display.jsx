@@ -4,21 +4,24 @@ import "./display.css"
 
 
 const Display = () => {
-    const [issLocation, setissLocation] = useState(null)
+    const [issLocation, setIssLocation] = useState(0)
 
     const getIssLocation = () => {
         fetch("http://api.open-notify.org/iss-now.json")
             .then(response => response.json())
-            .then(result => setissLocation(result.iss_position.longitude))
+            .then(result => setIssLocation(result.iss_position))
     }
 
 
-    getIssLocation()
-
     return (
         <Fragment>
-            <div className="location-border">
-                <span>{issLocation}</span>
+            <button onClick={() => setInterval(getIssLocation, 1000)} >Click to display location</button>
+            <div className="location-container">
+
+                <div className="location-border">
+                    <span>longitude: {issLocation.longitude}</span>
+                    <span>latitude: {issLocation.latitude}</span>
+                </div>
             </div>
         </Fragment>
     )
