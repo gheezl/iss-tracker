@@ -7,7 +7,6 @@ import Display from "./components/display/display.jsx"
 
 
 const App = () => {
-
   return (
     <Fragment>
       <Header />

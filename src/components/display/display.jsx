@@ -14,7 +14,6 @@ const Display = () => {
         setToggle(true)
     }
 
-
     return (
         <Fragment>
             <div className="location-container">
@@ -29,7 +28,7 @@ const Display = () => {
                         : (
                             <div className="button-border">
                                 <button className="button" onClick={() => setInterval(getIssLocation, 1000)} >
-                                    Click to track location
+                                    Start Tracking
                                 </button>
                             </div>
                         )

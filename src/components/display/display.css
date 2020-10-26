@@ -10,6 +10,8 @@
     font-size: 20px;
     cursor: pointer;
     transition: 0.5s;
+    border-bottom: 1px solid blue;
+
 }
 
 .button:hover {
@@ -28,6 +30,7 @@
     display: grid;
     align-items: center;
     font-size: 35px;
+    border-bottom: 1px solid blue;
 }
 
 @media only screen and (max-width: 800px) {
