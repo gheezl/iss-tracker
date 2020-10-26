@@ -29,6 +29,7 @@
 .location-border {
     display: grid;
     align-items: center;
+    color: white;
     font-size: 35px;
     border-bottom: 1px solid blue;
 }
