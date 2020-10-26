@@ -15,7 +15,11 @@ const Display = () => {
 
     return (
         <Fragment>
-            <button onClick={() => setInterval(getIssLocation, 1000)} >Click to display location</button>
+            <div className="button-border">
+                <button className="button" onClick={() => setInterval(getIssLocation, 1000)} >
+                    Click to display location
+                </button>
+            </div>
             <div className="location-container">
 
                 <div className="location-border">

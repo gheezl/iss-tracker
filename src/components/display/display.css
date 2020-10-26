@@ -1,3 +1,23 @@
+.button-border {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
 .location-container {
     display: flex;
     justify-content: center;
