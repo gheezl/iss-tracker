@@ -12,6 +12,7 @@ const Display = () => {
             .then(response => response.json())
             .then(result => setIssLocation(result.iss_position))
             .catch(err => console.log(err))
+            
         setToggle(true)
     }
 
