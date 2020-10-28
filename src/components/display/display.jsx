@@ -11,7 +11,7 @@ const Display = () => {
         fetch("http://api.open-notify.org/iss-now.json")
             .then(response => response.json())
             .then(result => setIssLocation(result.iss_position))
-            .catch(err => console.log(err))
+            .catch(err => alert(err.message))
 
         setToggle(true)
     }
