@@ -14,7 +14,7 @@ const Display = () => {
 
         setToggle(true)
     }
-
+    // setIssLocation(result.iss_position
     return (
         <Fragment>
             <div className="location-container">
