@@ -8,13 +8,13 @@ const Display = () => {
     const [toggle, setToggle] = useState(false)
 
     const getIssLocation = () => {
-        fetch("http://api.open-notify.org/iss-now.json")
+        fetch("https://api.wheretheiss.at/v1/satellites/25544")
             .then(response => response.json())
-            .then(result => setIssLocation(result.iss_position))
+            .then(result => setIssLocation(result))
 
         setToggle(true)
     }
-    // setIssLocation(result.iss_position
+
     return (
         <Fragment>
             <div className="location-container">
