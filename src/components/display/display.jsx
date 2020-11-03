@@ -22,8 +22,8 @@ const Display = () => {
                     toggle
                         ? (
                             <div className="location-border">
-                                <span>longitude: {Math.round(issLocation.longitude)}</span>
-                                <span>latitude: {Math.round(issLocation.latitude)}</span>
+                                <span>longitude: {Math.ceil(issLocation.longitude)}</span>
+                                <span>latitude: {Math.ceil(issLocation.latitude)}</span>
                             </div>
                         )
                         : (
